@@ -1,0 +1,60 @@
+brand Netlix 
+
+Section Plan: 
+- Header (Netflix log on left hand centered) + (language drop down and sign in button on right hand centered horizontally with inline block to eachother)
+- Hero section (backlground as a grid style layout of move/show titles in a faded filter way) + (large bubble almost letteting saying "Unlimited movies, TV shows, and more) (with a <p> fine print style wording centered underneath "Starts at $7.99. Cancel Anytime") + (smaller not bubble style font centered under the last thing saying " Ready to wacth? Enter your email to create or restart your membership" with a input box with a kinda sharp but rounded edge with placeholder text of "Email address" and a bigger font size button that says "Get Started" with a ">" arrow styled as a redbackground color and white font color) 
+
+- bottom of hero image is rounded inwards from the bottom left and right corners
+- another small interactive section that has a box icon of a popcord box with popcord and a star on the popcorn box as the logo to the right of a box that says "The Netflix you love for just $7.99." with small print underneath saying "Get our most affordable, ad-supported plan. with a far right of container button that says"Learn More" with a grey background with white letter. This section has a slght gradient background with a purple starting from left to right but about a 1/4 to the right of this container it turns to a deep blue.
+
+- Next under that is a section with a title that says "Trending Now" and has a row slider of different popular titles with a ">" button controller to make it scroll horizontally.
+
+- now has row styled rounded edge boxes that has title of "More Reasons to Join" with from left to right "Enjoy on your TV: Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more." with a monitor icon in the bottom right. then "Download your shows to watch offline
+Save your favorites easily and always have something to watch." then "Watch everywhere
+Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV." then Create profiles for kids
+Send kids on adventures with their favorite characters in a space made just for them — free with your membership.
+
+- now has centered and vertically aligned drop buttons with a "+" icon as the controller to pop open a box for each of these:
+Frequently Asked Questions
+What is Netflix?
+
+
+How much does Netflix cost?
+Where can I watch?
+
+
+How do I cancel?
+What can I watch on Netflix?
+Is Netflix good for kids?
+
+- Then another input section like the one up at the top: 
+Ready to watch? Enter your email to create or restart your membership.
+
+- then footer info all as links
+Questions? Call 1-866-952-4456
+
+FAQ
+Help Center
+Account
+Netflix House
+Media Center
+Investor Relations
+Jobs
+Netflix Shop
+Redeem Gift Cards
+Buy Gift Cards
+Ways to Watch
+Terms of Use
+Privacy
+Cookie Preferences
+Corporate Information
+Contact Us
+Speed Test
+Legal Notices
+Only on Netflix
+Do Not Sell or Share My Personal Information
+Ad Choices
+Select Language
+
+English
+This page is protected by Google reCAPTCHA to ensure you're not a bot. Learn more.
