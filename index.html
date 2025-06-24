@@ -5,9 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix Clone</title>
     <link rel="stylesheet" href="styles.css">
-    
+
 </head>
 <body>
-    
+  <header>   
+    <h3>Netflix</h3>                  <!-- logo, language dropdown, sign in -->
+    <nav>
+         <div class="lang-selector">
+    <button class="lang-btn">English</button>
+    <div class="lang-menu">
+      <div class="selected">English</div>
+      <div>Español</div>
+    </div>
+  </div>
+    </nav>
+  </header>
+
+  <section class="hero">       <!-- grid bg, main headline, email input + CTA -->
+    <div class="hero-content">
+      <h1>Unlimited movies, Tv shows, and more</h1>
+      <p class="subheading">Starts at $7.99. Cancel anytime.</p>
+      <h3 class="email-prompt">Ready to watch? Enter your email to create or restart your membership.</h3>
+     <form class="email-signup" action="/subscribe" method="POST">
+  <input type="email" name="email" placeholder="Enter your email" required>
+  <button type="submit">Get Started</button>
+</form>
+    </div>
+  </section>
+
+  <section class="promo">      <!-- popcorn promo box + gradient -->
+    <div class="promo-content">
+      <div class="promo-icon"></div>
+      <div class="promo-text"></div>
+      <button>Learn More</button>
+    </div>
+  </section>
+
+  <section class="trending">   <!-- title row + horizontal slider -->
+    <h2>Trending Now</h2>
+    <div class="carousel">
+      <!-- cards inside slider -->
+    </div>
+  </section>
+
+  <section class="reasons">    <!-- More Reasons to Join boxes -->
+    <h2></h2>
+    <div class="reason-cards">
+      <!-- 4 feature boxes -->
+    </div>
+  </section>
+
+  <section class="faq">        <!-- FAQ accordion -->
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">Question 1 [+]</div>
+    <div class="faq-answer">Answer text...</div>
+    <!-- repeat -->
+  </section>
+
+  <section class="cta-bottom"> <!-- email input CTA repeated -->
+    <form></form>
+  </section>
+
+  <footer>                    <!-- full footer links -->
+    <p>Questions? Call...</p>
+    <ul> <!-- link grid --></ul>
+    <div class="language-select"></div>
+    <p class="recaptcha-note"></p>
+  </footer>
 </body>
+
 </html>

@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #000; /* dark background base */
+  color: #fff; /* white text for contrast */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.hero {
+  background-image: url('your-hero-grid.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 90vh;
+  position: relative;
+  z-index: 1;
+}
+
+header {
+  position: relative;
+  z-index: 2; /* stays above hero bg */
+}
+
+ .email-signup {
+      display: flex;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    .email-signup input[type="email"] {
+        margin: 3px;
+      flex: 1;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-right: none;
+      border-radius: 4px 4px 4px 4px;
+      
+    }
+
+    .email-signup button {
+        margin: 3px;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #28a745;
+      background-color: #28a745;
+      color: white;
+      cursor: pointer;
+      border-radius: 4px 4px 4px 4px;
+      transition: background 0.3s;
+      
+    }
+
+    .email-signup button:hover {
+      background-color: #218838;
+    }
