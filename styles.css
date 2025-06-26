@@ -1,130 +1,75 @@
+:root {
+    --primary-color: #e50914;
+
+}
+
+* {
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
 body {
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  background-color: #000;
-  color: #fff;
-  overflow-x: hidden;
-  text-align: center;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: 'arial', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background: #000;
+    color: #999;
 }
 
+ul {
+    list-style: none;
+}
 
+h1,h2,h3,h4 {
+    color: #fff;
+}
 
-.overlay {
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+p {
+    margin: 0.5rem 0;
+}
+
+img {
+    width: 100%;
+}
+
+.showcase {
+  position: relative;
+  height: 100vh;
+  background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/75b0ed49-75ab-4a63-bd45-37bc2c95cb73/web/US-en-20250623-TRIFECTA-perspective_b69e63a6-20f5-4944-a09a-a891ecd0a3d3_large.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  z-index: 1;
+}
+
+.showcase::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 0;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
+  z-index: -1;
 }
 
-.header {
-  position: relative;
-  min-height: 100vh;
-  overflow: hidden;
+.showcase-top {
+    position: relative;
+    height: 90px;
 }
 
-.header-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1; /* So content appears on top */
+.default-ltr-cache-1d568uk {
+    width: 9.25rem;
+    height: 2.5rem;
+    color: rgb(229, 9, 20);
+    fill: currentColor;
+    display: block;
 }
 
-.header-background img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.header-content {
-   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 100px 20px 40px;
-  max-width: 900px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 2;
-  text-align: center;
-}
-
-.header-content h1,
-.header-content p,
-.header-content h3 {
-  margin-bottom: 16px;
-  max-width: 700px;
-}
-
-.signIn-btn {
-  margin: 10px;
-  padding: 10px;
-  font-size: 16px;
-  background-color: #e50914;
-  color: white;
-  border: none;
-  border-radius: 4px 4px 4px 4px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
- .email-signup {
-  display: flex;
-  max-width: 700px;
-  margin: auto;
-  width: 100%;
-}
-
-.input-wrapper {
-  position: relative;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid #333;
-  border-radius: 4px 4px 4px 4px;
-  padding: 6px 12px 2px;
-  background-color: rgba(28, 36, 51, 0.6);
-}
-
-.input-wrapper label {
-  font-size: 12px;
-  color: rgba(255, 255, 255, 0.7);
-  margin-bottom: 2px;
-  pointer-events: none;
-}
-
-.input-wrapper input {
-  background: transparent;
-  border: none;
-  outline: none;
-  font-size: 16px;
-  color: white;
-  padding: 4px 0 6px;
-  width: 100%;
-}
-
-/* Prevent browser autofill from changing colors */
-
-
-.email-signup button {
-  margin: 10px;
-  padding: 20px;
-  font-size: 16px;
-  background-color: #e50914;
-  color: white;
-  border: none;
-  border-radius: 4px 4px 4px 4px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.email-signup button:hover {
-  background-color: #c11119;
-}
