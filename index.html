@@ -8,32 +8,69 @@
 
 </head>
 <body>
-  <header>   
-    <h3>Netflix</h3>                  <!-- logo, language dropdown, sign in -->
-    <nav>
-         <div class="lang-selector">
-    <button class="lang-btn">English</button>
-    <div class="lang-menu">
-      <div class="selected">English</div>
-      <div>Español</div>
-    </div>
+ <header class="header">
+
+  <!-- Background -->
+  <div class="header-background">
+    <img
+      src="https://assets.nflxext.com/ffe/siteui/vlv3/75b0ed49-75ab-4a63-bd45-37bc2c95cb73/web/US-en-20250623-TRIFECTA-perspective_b69e63a6-20f5-4944-a09a-a891ecd0a3d3_large.jpg"
+      srcset="
+        https://assets.nflxext.com/ffe/siteui/vlv3/75b0ed49-75ab-4a63-bd45-37bc2c95cb73/web/US-en-20250623-TRIFECTA-perspective_b69e63a6-20f5-4944-a09a-a891ecd0a3d3_small.jpg 959w,
+        https://assets.nflxext.com/ffe/siteui/vlv3/75b0ed49-75ab-4a63-bd45-37bc2c95cb73/web/US-en-20250623-TRIFECTA-perspective_b69e63a6-20f5-4944-a09a-a891ecd0a3d3_medium.jpg 1279w,
+        https://assets.nflxext.com/ffe/siteui/vlv3/75b0ed49-75ab-4a63-bd45-37bc2c95cb73/web/US-en-20250623-TRIFECTA-perspective_b69e63a6-20f5-4944-a09a-a891ecd0a3d3_large.jpg 2000w
+      "
+      alt=""
+      aria-hidden="true"
+      class="header-bg-img"
+    />
   </div>
+
+  <!-- Overlay (goes above background, below content) -->
+  <div class="overlay"></div>
+
+  <!-- REAL content goes here -->
+  <div class="header-content">
+
+    <!-- Top nav -->
+    <h3 class="logo">Netflix</h3>
+    <nav class="header-nav">
+      <div class="lang-selector">
+        <button type="submit" class="lang-btn">English</button>
+        <div class="lang-menu">
+          <div class="selected">English</div>
+          <div>Español</div>
+        </div>
+      </div>
+      <button type="submit" class="signIn-btn">Sign In</button>
     </nav>
-  </header>
 
-  <section class="hero">       <!-- grid bg, main headline, email input + CTA -->
-    <div class="hero-content">
-      <h1>Unlimited movies, Tv shows, and more</h1>
-      <p class="subheading">Starts at $7.99. Cancel anytime.</p>
-      <h3 class="email-prompt">Ready to watch? Enter your email to create or restart your membership.</h3>
-     <form class="email-signup" action="/subscribe" method="POST">
-  <input type="email" name="email" placeholder="Enter your email" required>
-  <button type="submit">Get Started</button>
-</form>
-    </div>
-  </section>
+    <!-- Hero content -->
+    <h1>Unlimited movies, TV shows, and more</h1>
+    <p class="subheading">Starts at $7.99. Cancel anytime.</p>
+    <h3 class="email-prompt">
+      Ready to watch? Enter your email to create or restart your membership.
+    </h3>
 
-  <section class="promo">      <!-- popcorn promo box + gradient -->
+    <!-- Form -->
+    <form class="email-signup" action="/subscribe" method="POST">
+      <div class="input-wrapper">
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email" autocomplete="email" required />
+      </div>
+      <button type="submit">Get Started</button>
+    </form>
+
+  </div>
+
+</header>
+
+
+    
+  
+
+  <!--
+
+  <section class="promo">      
     <div class="promo-content">
       <div class="promo-icon"></div>
       <div class="promo-text"></div>
@@ -41,37 +78,41 @@
     </div>
   </section>
 
-  <section class="trending">   <!-- title row + horizontal slider -->
+  <section class="trending">   
     <h2>Trending Now</h2>
     <div class="carousel">
-      <!-- cards inside slider -->
+      
     </div>
   </section>
 
-  <section class="reasons">    <!-- More Reasons to Join boxes -->
+  <section class="reasons">    
     <h2></h2>
     <div class="reason-cards">
-      <!-- 4 feature boxes -->
+      
     </div>
   </section>
 
-  <section class="faq">        <!-- FAQ accordion -->
+  <section class="faq">        
     <h2>Frequently Asked Questions</h2>
     <div class="faq-item">Question 1 [+]</div>
     <div class="faq-answer">Answer text...</div>
-    <!-- repeat -->
+    
   </section>
 
-  <section class="cta-bottom"> <!-- email input CTA repeated -->
+  <section class="cta-bottom"> 
     <form></form>
   </section>
 
-  <footer>                    <!-- full footer links -->
+  <footer>                    
     <p>Questions? Call...</p>
-    <ul> <!-- link grid --></ul>
+    <ul> </ul>
     <div class="language-select"></div>
     <p class="recaptcha-note"></p>
   </footer>
+-->
 </body>
 
 </html>
+
+
+
