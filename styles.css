@@ -42,11 +42,23 @@ img {
   position: relative;
   height: 100vh;
   background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/75b0ed49-75ab-4a63-bd45-37bc2c95cb73/web/US-en-20250623-TRIFECTA-perspective_b69e63a6-20f5-4944-a09a-a891ecd0a3d3_large.jpg');
-  background-size: cover;
+  background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
   color: white;
   z-index: 1;
+}
+
+.showcase::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0,0,0, 0.6);
+    box-shadow: inset 10px 10px 10px #000000;
 }
 
 .showcase::before {
@@ -63,6 +75,42 @@ img {
 .showcase-top {
     position: relative;
     height: 90px;
+    z-index: 2;
+}
+
+.showcase-top a {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+
+.showcase-content {
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 9rem;
+    z-index: 2;
+}
+
+.showcase-content h1 {
+    font-weight: 700;
+    font-size: 5.2rem;
+    line-height: 1.1;
+    margin-bottom: 0 0 2rem;
+}
+
+.showcase-content p {
+    text-transform: uppercase;
+    color: white;
+    font-weight: 400;
+    font-size: 1.9rem;
+    line-height: 1.25;
+    margin: 0 0 2rem;
 }
 
 .default-ltr-cache-1d568uk {
@@ -71,5 +119,41 @@ img {
     color: rgb(229, 9, 20);
     fill: currentColor;
     display: block;
+    
+}
+
+.btn {
+    display: inline-block;
+    background: var(--primary-color);
+    color: white;
+    padding: .4rem 1.3rem;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin-right: .5rem;
+    outline: none;
+    box-shadow: 0 1px 0 rgba(0,0,0, 0.45);
+    border-radius: 2px;
+}
+
+.btn:hover{
+    opacity: 0.9;
+}
+
+.btn-rounded {
+    border-radius: 5px;
+}
+
+.btn-xl {
+    font-size: 2rem;
+    padding: 1.5rem 2.1rem;
+    text-transform: uppercase;
+}
+
+.btn-lg {
+    font-size: 1rem;
+    padding: .8rem 1.3rem;
+    text-transform: uppercase;
 }
 
